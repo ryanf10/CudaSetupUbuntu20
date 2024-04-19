@@ -117,3 +117,12 @@ Install library `sudo apt-get install libfreeimage3 libfreeimage-dev`
       `torch.backends.cudnn.is_available()`
 
       If returned `True` then validation is passed
+
+
+
+# Uninstall
+```
+sudo apt-get --purge remove "*cublas*" "cuda*" "nsight*" 
+sudo apt-get --purge remove "*nvidia*"
+sudo rm -rf /usr/local/cuda*
+```
